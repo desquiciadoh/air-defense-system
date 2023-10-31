@@ -15,23 +15,23 @@ for (let i = 0; i < height; i++) {
   main.append(row)
 }
 
-// for (let i = 0; i < height; i++) {
-//   for (let j = 0; j <= i + 3; j++) {
-//     main.children[i].children[(width - 1) - j].style.border = '1px solid lightgreen'
-//   }
-// }
+for (let i = 0; i < height; i++) {
+  for (let j = 0; j <= i + 3; j++) {
+    main.children[i].children[(width - 1) - j].style.border = '1px solid lightgreen'
+  }
+}
 
-// for (let i = 0; i < height; i++) {
-//   for (let j = 0; j < width; j++) {
-//     if (main.children[i].children[j].style.border !== '1px solid lightgreen') {
-//       main.children[i].children[j].style.border = '1px solid red'
-//     }
-//   }
-// }
+for (let i = 0; i < height; i++) {
+  for (let j = 0; j < width; j++) {
+    if (main.children[i].children[j].style.border !== '1px solid lightgreen') {
+      main.children[i].children[j].style.border = '1px solid red'
+    }
+  }
+}
 
-// for (let i = 0; i < width; i++) {
-//   main.children[height - 1].children[i].style.border = '1px solid grey'
-// }
+for (let i = 0; i < width; i++) {
+  main.children[height - 1].children[i].style.border = '1px solid grey'
+}
 
 function fire () {
   let x = width - 1 
@@ -89,7 +89,7 @@ function fire () {
         }
       }
     }
-  }, 250);
+  }, 750);
 } 
 
 fire()
